@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cloud.chat.controller.ChatUIController" prefWidth="500" prefHeight="520">
+    <children>
+        <TextArea fx:id="messageArea" layoutX="10" layoutY="10" prefHeight="300" prefWidth="480" editable="false" wrapText="true"/>
+
+        <TextField fx:id="inputField" layoutX="10" layoutY="320" prefWidth="300" />
+        <Button fx:id="sendButton" layoutX="320" layoutY="320" text="Send" prefWidth="80" />
+
+        <Label layoutX="10" layoutY="360" text="Online Peers:" />
+        <Label fx:id="nodeCountLabel" layoutX="100" layoutY="360" text="0" />
+
+        <ComboBox fx:id="peerComboBox"
+                  layoutX="160" layoutY="355"
+                  prefWidth="200"
+                  promptText="Select peer (Broadcast by default)"/>
+
+        <Button fx:id="refreshButton" layoutX="370" layoutY="355" text="Refresh" prefWidth="80" />
+    </children>
+</AnchorPane>
